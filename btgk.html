@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Nghệ nhân - CultureTrail</title>
+
+    <!-- Font chữ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="btgk.css">
+</head>
+
+<body>
+
+    <!-- Khung nội dung chính -->
+    <main class="container">
+        <header class="page-header">
+            <h1 class="page-title">Quản lý Nghệ nhân</h1>
+            <p class="page-desc">Xác minh hồ sơ, khoá/mở tài khoản và theo dõi hoạt động đăng bài của từng nghệ nhân.
+            </p>
+        </header>
+
+        <!-- Khu vực thống kê chỉ số -->
+        <section class="stats-grid" aria-label="Thống kê hệ thống">
+            <div class="stat-card">
+                <div class="stat-title">TỔNG NGHỆ NHÂN</div>
+                <div class="stat-value dark" id="totalArtisans">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">ĐANG HOẠT ĐỘNG</div>
+                <div class="stat-value primary" id="activeArtisans">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">ĐÃ XÁC MINH</div>
+                <div class="stat-value primary" id="verifiedArtisans">0</div>
+            </div>
+        </section>
+
+        <!-- Danh sách thẻ nghệ nhân (Render bằng JavaScript) -->
+        <section class="artisan-list" id="artisanContainer" aria-label="Danh sách nghệ nhân"></section>
+    </main>
+
+    <!-- Chân trang -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+                            <path d="M12 6a6 6 0 0 0-6 6c0 2.5 1.5 4.5 4 5.5" />
+                            <circle cx="12" cy="12" r="2" />
+                        </svg>
+                        CultureTrail
+                    </div>
+                    <p class="brand-desc">Nền tảng kết nối du khách với những giá trị văn hoá chân thực nhất của Việt
+                        Nam thông qua trải nghiệm thực tế và AI.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Khám phá</a></li>
+                        <li><a href="#">Lịch trình AI</a></li>
+                        <li><a href="#">Nghệ nhân nổi bật</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hỗ trợ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@culturetrail.vn">support@culturetrail.vn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 CultureTrail. Bản quyền thuộc về Đội ngũ phát triển.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Nút trò chuyện nổi -->
+    <div class="chat-bubble" title="Hỗ trợ trực tuyến">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </div>
+
+    <!-- Modal xem chi tiết hồ sơ -->
+    <div class="modal-overlay" id="profileModal">
+        <div class="modal-box">
+            <h3 id="modalName">Hồ sơ nghệ nhân</h3>
+            <p id="modalDetail">Chi tiết kinh nghiệm và thông tin liên hệ.</p>
+            <div class="modal-actions">
+                <button class="btn btn-default" onclick="closeModal()">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="btgk.js"></script>
+</body>
+
+</html>
