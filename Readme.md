@@ -6,11 +6,11 @@
 | --- | --- |
 | Tên đề tài BTL | CultureTrail — Nền tảng kết nối du khách với văn hóa truyền thống Việt Nam |
 | Trang thực hiện | Trang Quản trị — Quản lý Nghệ nhân (Artisan Management Dashboard) |
-| Sinh viên | [Điền Họ và Tên của bạn] |
-| Mã sinh viên | [Điền Mã Sinh Viên của bạn] |
-| Repository GitHub | [Dán link GitHub repo chứa mã nguồn của bạn vào đây] |
-| Thiết kế Figma | [Dán link thiết kế Figma của bạn vào đây] |
-| Video trình bày | [Dán link video YouTube/Drive của bạn vào đây] |
+| Sinh viên | [Lê Quang Huy] |
+| Mã sinh viên | [2551060628] |
+| Repository GitHub | [https://github.com/leezvux-del/BTGK.web] |
+| Thiết kế Figma | [https://www.figma.com/design/VuQPBPyO71QQPX6DbXvQgG/Untitled?node-id=0-1&t=XrSlrVX3IMgjqYDB-1] |
+| Video trình bày | [https://youtu.be/vPD64SsRS8E] |
 
 
 ## Mục đích trang
